@@ -18,19 +18,19 @@ public class User4DAO {
 		mybatis.insert("user4.insertUser4", vo);
 	}
 	
-	public User4VO selectUser4(String uid) {
-		return mybatis.selectOne("user4.selectUser4", uid);
+	public User4VO selectUser4(String seq) {
+		return mybatis.selectOne("user4.selectUser4", seq);
 	}
 	
 	public List<User4VO> selectUser4s() {
-		return mybatis.selectList("user4.selcetUser4s");
+		return mybatis.selectList("user4.selectUser4s");
 	}
 	
-	public void updateUser4(String uid) {
-		mybatis.update("user4.updateUser4", uid);
+	public void updateUser4(User4VO vo) {
+		mybatis.update("user4.updateUser4", vo);
 	}
 	
-	public void deleteUser4(String uid) {
-		mybatis.delete("user4.deleteUser4", uid);
+	public void deleteUser4(String seq) {
+		mybatis.delete("user4.deleteUser4", seq);
 	}
 }

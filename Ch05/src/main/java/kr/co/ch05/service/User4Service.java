@@ -18,19 +18,19 @@ public class User4Service {
 		dao.insertUser4(vo);
 	}
 	
-	public User4VO selectUser4(String uid) {
-		return dao.selectUser4(uid);
+	public User4VO selectUser4(String seq) {
+		return dao.selectUser4(seq);
 	}
 	
 	public List<User4VO> selectUser4s() {
 		return dao.selectUser4s();
 	}
 	
-	public void updateUser4(String uid) {
-		dao.updateUser4(uid);
+	public void updateUser4(User4VO vo) {
+		dao.updateUser4(vo);
 	}
 	
-	public void deleteUser4(String uid) {
-		dao.deleteUser4(uid);
+	public void deleteUser4(String seq) {
+		dao.deleteUser4(seq);
 	}
 }

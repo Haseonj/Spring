@@ -4,32 +4,34 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<title>user4::list</title>
+		<title>user5::list</title>
 	</head>	
 <body>
-	<h3>user4 목록</h3>
+	<h3>user5 목록</h3>
 	<a href="/Ch05">ch05 메인</a>
-	<a href="/Ch05/user4/register">user4 등록</a>
+	<a href="/Ch05/user5/register">user5 등록</a>
 	
 	<table border="1">
 		<tr>
-			<th>번호</th>
+			<th>아이디</th>
 			<th>이름</th>
-			<th>성별</th>
+			<th>생일</th>
 			<th>나이</th>
 			<th>주소</th>
+			<th>전화번호</th>
 			<th>관리</th>
 		</tr>
 		<c:forEach var="user" items="${users}">
 			<tr>
-				<td>${user.seq}</td>
+				<td>${user.uid}</td>
 				<td>${user.name}</td>
-				<td>${user.gender}</td>
+				<td>${user.birth}</td>
 				<td>${user.age}</td>
-				<td>${user.addr}</td>
+				<td>${user.address}</td>
+				<td>${user.hp}</td>
 				<td>
-					<a href="/Ch05/user4/modify?seq=${user.seq}">수정</a>
-					<a href="/Ch05/user4/delete?seq=${user.seq}">삭제</a>
+					<a href="/Ch05/user5/modify?uid=${user.uid}">수정</a>
+					<a href="/Ch05/user5/delete?uid=${user.uid}">삭제</a>
 				</td>
 			</tr>
 		</c:forEach>
