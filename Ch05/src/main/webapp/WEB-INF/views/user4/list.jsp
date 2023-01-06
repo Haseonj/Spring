@@ -24,7 +24,16 @@
 			<tr>
 				<td>${user.seq}</td>
 				<td>${user.name}</td>
-				<td>${user.gender}</td>
+				<td>
+					<c:choose>
+						<c:when test="${user.gender eq '1'}">
+							남
+						</c:when>
+						<c:otherwise>
+							여
+						</c:otherwise>
+					</c:choose>
+				</td>
 				<td>${user.age}</td>
 				<td>${user.addr}</td>
 				<td>

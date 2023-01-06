@@ -14,27 +14,27 @@
 		<table border="1">
 			<tr>
 				<td>아이디</td>
-				<td><input type="text" name="uid" value="${user.uid}" readonly></td>
+				<td><input type="text" name="uid" value="${member.uid}" readonly></td>
 			</tr>
 			<tr>
 				<td>이름</td>
-				<td><input type="text" name="name" value="${user.name}"></td>
-			</tr>
-			<tr>
-				<td>생일</td>
-				<td><input type="date" name="birth" value="${user.birth}"></td>
-			</tr>
-			<tr>
-				<td>나이</td>
-				<td><input type="text" name="age" value="${user.age}"></td>
-			</tr>
-			<tr>
-				<td>주소</td>
-				<td><input type="text" name="address" value="${user.address}"></td>
+				<td><input type="text" name="name" value="${member.name}"></td>
 			</tr>
 			<tr>
 				<td>전화번호</td>
-				<td><input type="text" name="hp" value="${user.hp}"></td>
+				<td><input type="text" name="hp" value="${member.hp}"></td>
+			</tr>
+			<tr>
+				<td>직급</td>
+				<td><input type="text" name="pos" value="${member.pos}"></td>
+			</tr>
+			<tr>
+				<td>부서</td>
+				<td><input type="text" name="dep" value="${member.dep}"></td>
+			</tr>
+			<tr>
+				<td>입사일</td>
+				<td><input type="text" name="rdate" value="${member.rdate}" readonly></td>
 			</tr>
 			<tr>
 				<td colspan="2" align="right"><input type="submit" value="등록"></td>

@@ -22,7 +22,7 @@
 			</tr>
 			<tr>
 				<td>생일</td>
-				<td><input type="radio" name="birth" value="${user.birth}"></td>
+				<td><input type="date" name="birth" value="${user.birth}"></td>
 			</tr>
 			<tr>
 				<td>나이</td>

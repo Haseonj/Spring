@@ -15,7 +15,7 @@ public class User6DAO {
 	private SqlSessionTemplate mybatis;
 	
 	public void insertUser6(User6VO vo) {
-		mybatis.insert("user6.insertUser6");
+		mybatis.insert("user6.insertUser6", vo);
 	}
 	
 	public User6VO selectUser6(String uid) {
@@ -27,7 +27,7 @@ public class User6DAO {
 	}
 	
 	public void updateUser6(User6VO vo) {
-		mybatis.update("user6.updateUser6");
+		mybatis.update("user6.updateUser6", vo);
 	}
 	
 	public void deleteUser6(String uid) {
